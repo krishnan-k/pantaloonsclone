@@ -1,0 +1,11 @@
+.navbar_section {
+    background: #4BB1B5;
+    padding: .5rem 6rem;
+}
+.navbar_section a.navbar-brand img{
+    max-width: 180px;
+}
+.navbar_section .nav-item a.nav-link {
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
