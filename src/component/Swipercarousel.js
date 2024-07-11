@@ -16,9 +16,12 @@ import slideFive from '../image/slide-5.png';
 
 export const Swipercarousel = () => {
   const imaClassName = 'image_class';
+  const pagination = {
+    clickable: true,
+  }
   return (
     <div className="SwiperCarousel">
-      <Swiper pagination ={true} modules={[Pagination,Navigation]} navigation = {true} className="mySwiper">
+      <Swiper pagination={pagination} navigation = {true}  modules={[Navigation,Pagination]} className="mySwiper">
         <SwiperSlide><img className={imaClassName} src={slideOne} alt='slider-image' /></SwiperSlide>
         <SwiperSlide><img className={imaClassName} src={slideTwo} alt='slider-image' /></SwiperSlide>
         <SwiperSlide><img className={imaClassName} src={slideThree} alt='slider-image' /></SwiperSlide>
