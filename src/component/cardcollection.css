@@ -1,0 +1,84 @@
+.card_collection_section{
+    background: url("../image/Desktop-Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.CardSwiperCarousel .card-body p.card-text {
+  white-space: nowrap;
+  width: -webkit-fill-available;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.CardSwiperCarousel .card-body h5.card-title {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+.card_collection_section .CardSwiperCarousel .card{
+    padding: 5px;
+}
+.card_collection_section .CardSwiperCarousel .card .card-body {
+    padding: 15px 5px;
+}
+.card_collection_section .CardSwiperCarousel .card,
+.card_collection_section .CardSwiperCarousel .card img{
+    border-radius: 5px;
+}
+.card_collection_section .CardSwiperCarousel .card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_collection_section .CardSwiperCarousel .card_heading h4{
+    font: italic normal 600 28px Trirong,serif; 
+    text-shadow: 1px 1px #ffc20e;
+    text-transform: capitalize;
+}
+.card_collection_section .CardSwiperCarousel .card_heading a{
+    color:#00b0b5;
+    font-size: 14px;
+}
+.card_collection_section .CardSwiperCarousel p.product_price {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.CardSwiperCarousel.container{
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card_collection_section .CardSwiperCarousel .swiper{
+    overflow: visible;
+}
+.CardSwiperCarousel .swiper .swiper-button-prev:after {
+    position: relative;
+    left: -20px;
+}
+.CardSwiperCarousel .swiper .swiper-button-next:after {
+    position: relative;
+    right: -20px;
+}
+.CardSwiperCarousel .swiper .swiper-button-prev:after,
+.CardSwiperCarousel .swiper .swiper-button-next:after {
+    font-size: 14px;
+    color: black;
+}
+.CardSwiperCarousel .swiper .swiper-button-next:before,
+.CardSwiperCarousel .swiper .swiper-button-prev:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background: #F6C929;
+    z-index: -1;
+}
+.CardSwiperCarousel .swiper .swiper-button-next:before{
+    border-radius: 50px 0 0 50px; right: -30px;
+}
+.CardSwiperCarousel .swiper .swiper-button-prev:before{
+    border-radius: 0 50px 50px 0; left: -30px;
+}
+
+
