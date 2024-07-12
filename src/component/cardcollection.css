@@ -9,10 +9,12 @@
   width: -webkit-fill-available;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 14px;
 }
 .CardSwiperCarousel .card-body h5.card-title {
-    font-size: 14px;
-    letter-spacing: 1.2px;
+    font-size: 13px;
+    letter-spacing: 2.2px;
+    font-weight: 600;
 }
 .card_collection_section .CardSwiperCarousel .card{
     padding: 5px;
@@ -37,10 +39,11 @@
 .card_collection_section .CardSwiperCarousel .card_heading a{
     color:#00b0b5;
     font-size: 14px;
+    letter-spacing: 2.2px;
 }
 .card_collection_section .CardSwiperCarousel p.product_price {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
 }
 
@@ -80,5 +83,7 @@
 .CardSwiperCarousel .swiper .swiper-button-prev:before{
     border-radius: 0 50px 50px 0; left: -30px;
 }
-
+span.product_price {
+    margin-left: 5px;
+}
 

@@ -5,7 +5,6 @@ import { Navigation } from "swiper/modules";
 import "./cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import cardImg1 from "../image/662120-6779863.png";
 import cardImg2 from "../image/663283-6793162.png";
 import cardImg3 from "../image/669720-6921124.png";
@@ -17,7 +16,7 @@ import cardImg8 from "../image/776888-8972231.png";
 import cardImg9 from "../image/730138-8129261.png";
 export const Cardcollection = () => {
   return (
-    <div className="card_collection_section mt-5 mb-5 pt-5 pb-5">
+    <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
       <div className="CardSwiperCarousel container">
       <div className="card_heading mb-4 pb-2">
         <h4 className="mb-0">deal of the day</h4>
@@ -38,7 +37,7 @@ export const Cardcollection = () => {
                 <p class="card-text mb-1">
                   Blue Solid Casual Men Regular Fit Kurtas
                 </p>
-                <p className="product_price mb-0">₹629 <span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹670</span></p>
+                <p className="product_price mb-0">₹629<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹670</span></p>
               </div>
             </div>
           </SwiperSlide>
@@ -51,7 +50,7 @@ export const Cardcollection = () => {
                   Peach Printed Athleisure Half Sleeves Round Neck Women Regular
                   Fit Tops
                 </p>
-                <p className="product_price mb-0">₹719 <span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹780</span></p>
+                <p className="product_price mb-0">₹719<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹780</span></p>
               </div>
             </div>
           </SwiperSlide>
@@ -64,7 +63,7 @@ export const Cardcollection = () => {
                   Medium Blue Textured Casual Half Sleeves Polo Collar Men Slim
                   Fit T-Shirts
                 </p>
-                <p className="product_price mb-0">₹830 <span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹880</span></p>
+                <p className="product_price mb-0">₹830<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹880</span></p>
               </div>
             </div>
           </SwiperSlide>

@@ -1,0 +1,14 @@
+import React from "react";
+import "./video.css"
+import promovideo from "../image/Pantaloonsvideo.mp4";
+const Video = () => {
+  return (
+    <div className="container">
+      <div className="video-section">
+        <video src={promovideo} autoPlay muted/>
+      </div>
+    </div>
+  );
+};
+
+export default Video;
