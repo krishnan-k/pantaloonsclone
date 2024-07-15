@@ -10,7 +10,7 @@ import brand5 from "../image/brand-5.png";
 import brand6 from "../image/brand-6.png";
 const Brand = () => {
   return (
-    <div className="container mt-5 mb-5 pt-5 pt-5 brand">
+    <div className="container mt-4 mb-4 pt-4 pt-4 brand">
       <div className="card_heading mb-4 pb-2">
         <h4 className="mb-0">Brands You Love</h4>
         <a className="text-uppercase fw-bolder text-decoration-none" href="#">

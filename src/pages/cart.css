@@ -1,0 +1,23 @@
+.empty-cart-heading h3.empty-cart-heading {
+    font-family: Trirong, serif;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 400;
+}
+.empty-cart-heading p.description {
+    max-width: 250px;
+    margin: auto;
+}
+.empty-cart-heading button.cart-empty-button {
+    padding: 16px 44px 17px 43px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    background-image: linear-gradient(90deg, #00a1a5 -1%, #00c2c8 101%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}

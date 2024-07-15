@@ -9,3 +9,15 @@
     letter-spacing: 1.5px;
     font-size: 15px;
 }
+.cart-icon svg[stroke] {
+    color: white;
+}
+.cart-icon svg path {
+    stroke-width: 38px;
+}
+.cart-icon svg[stroke],
+.account-icon svg[stroke]{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
