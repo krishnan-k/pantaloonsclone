@@ -1,8 +1,9 @@
 import React from 'react'
 import promobanner from '../image/promobanner.png'
+import "./promobanner.css";
 const Promobanner = () => {
   return (
-    <div className='container mt-4 mb-4 pt-4 pb-4'>
+    <div className='container mt-0 mb-5  pt-0 pb-0 promobanner'>
         <img src={promobanner} alt="promobanner" />
     </div>
   )

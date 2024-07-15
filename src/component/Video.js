@@ -5,7 +5,7 @@ const Video = () => {
   return (
     <div className="container">
       <div className="video-section">
-        <video src={promovideo} autoPlay muted/>
+        <video src={promovideo} autoPlay muted loop controls/>
       </div>
     </div>
   );

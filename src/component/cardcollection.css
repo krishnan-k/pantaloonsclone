@@ -1,9 +1,23 @@
 .card_collection_section{
-    background: url("../image/Desktop-Background.png");
-    background-repeat: no-repeat;
+    /* background: url("../image/Desktop-Background.png"); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background: linear-gradient(90deg, rgb(255, 227, 104) 10%, rgb(255, 111, 108) 52%);
+    background-size: 200% 200%;
+    animation: linear-background 5s ease infinite;
 }
+@keyframes linear-background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .CardSwiperCarousel .card-body p.card-text {
   white-space: nowrap;
   width: -webkit-fill-available;
@@ -35,9 +49,10 @@
     font: italic normal 600 28px Trirong,serif; 
     text-shadow: 1px 1px #ffc20e;
     text-transform: capitalize;
+    color: white;
 }
 .card_collection_section .CardSwiperCarousel .card_heading a{
-    color:#00b0b5;
+    color:#ffffff;
     font-size: 14px;
     letter-spacing: 2.2px;
 }

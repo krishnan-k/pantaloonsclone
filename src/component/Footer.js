@@ -1,7 +1,12 @@
 import React from "react";
 import "./footer.css";
 import paymentimage from "../image/payment.png";
+import playstore from "../image/google-play.svg"
+import applestore from "../image/apple.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
+    const palyStoreLink = "https://play.google.com/store/apps/details?id=com.pantaloons&source=footer&pli=1";
+    const appleStoreLink = "https://apps.apple.com/in/app/pantaloons-online-shopping-app/id1599439483?source=footer";
   return (
     <footer className="pt-4 pb-3">
       <div className="container pt-5 pb-5">
@@ -100,6 +105,13 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
+      </div>
+      <div className="dowload-app footer-category pb-3 mb-3">
+      <h4 className="text-uppercase fw-bolder mb-3 text-center">experience pantaloons app</h4>
+      <div className="dowload-image text-center">
+        <Link to={palyStoreLink} target="_blank"><img src={playstore} className="ms-2 me-2" alt="plas-tore"/></Link>
+        <Link to={appleStoreLink} target="_blank"><img src={applestore} className="ms-2 me-2" alt="apple-store"/></Link>
+      </div> 
       </div>
       <div className="footer-bottom pt-3">
         <div className="footer-bottom-content container">

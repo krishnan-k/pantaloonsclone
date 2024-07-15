@@ -11,7 +11,11 @@
 }
 
 .brand .card_heading h4 {
-    font: italic normal 600 28px Trirong, serif;
+    font-family: Trirong, serif;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .brand .card_heading a {

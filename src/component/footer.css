@@ -29,3 +29,9 @@ footer {
 .footer-bottom-content >* {
     font-size: 12px;
 }
+.dowload-app.footer-category h4 {
+    letter-spacing: 3.2px;
+}
+.dowload-app .dowload-image img {
+    max-width: 120px;
+}

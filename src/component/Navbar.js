@@ -9,9 +9,9 @@ export const Navbar = () => {
     <div className="navbar_section">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src={logo} />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -77,12 +77,12 @@ export const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="account-icon ms-2 me-2">
+        <div className="account-icon ms-3 me-3">
           <Link to="account">
             <FiUser />
           </Link>
         </div>
-        <div className="cart-icon ms-2 me-2">
+        <div className="cart-icon ms-3 me-3">
           <Link to="cart">
             <IoBagHandleOutline />
           </Link>

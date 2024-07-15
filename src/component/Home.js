@@ -9,7 +9,8 @@ import Video from './Video'
 import Promobanner from './Promobanner'
 import Support from './Support'
 import Footer from './Footer'
-
+import Giftcard from './Giftcard'
+import Greencard from './Greencard'
 const Home = () => {
   return (
     <div>
@@ -20,9 +21,10 @@ const Home = () => {
       <Grid/>
       <Brand/>
       <Video/>
+      <Giftcard/>
+      <Greencard/>
       <Promobanner/>
       <Support/>
-      <Footer/>
     </div>
   )
 }
