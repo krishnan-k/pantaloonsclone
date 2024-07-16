@@ -14,7 +14,7 @@
     border: none;
     cursor: pointer;
     border-radius: 40px;
-    background-image: linear-gradient(90deg, #00a1a5 -1%, #00c2c8 101%);
+    background-image: linear-gradient(90deg, #00a1a5 5%, #00c2c8 100%);
     font-size: 14px;
     font-weight: 600;
     color: #fff;
