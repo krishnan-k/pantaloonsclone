@@ -5,15 +5,28 @@ import { Link } from "react-router-dom";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 export const Navbar = () => {
+    const headerNavigation = document.getElementById("navbarsection");
+    if(headerNavigation){
+      const navigationContent = headerNavigation.querySelector(".navbar-nav");
+      const navigationItems = navigationContent.querySelectorAll(".nav-item");
+      navigationItems.forEach(navbarItem =>{
+        navbarItem.addEventListener("mouseover", () =>{
+          navbarItem.classList.add("active");
+        });
+        navbarItem.addEventListener("mouseout", () =>{
+          navbarItem.classList.remove("active");
+        });
+      });
+    }
   return (
-    <div className="navbar_section">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+    <div id="navbarsection" className="navbar_section">
+      <nav className="navbar navbar-expand-lg container">
+        <div className="container-fluid p-0">
+          <Link className="navbar-brand" to="/">
             <img src={logo} />
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -21,54 +34,153 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navigation navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
                 <Link
-                  class="nav-link active text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link active text-uppercase ms-3 me-3 fw-normal text-light"
                   aria-current="page"
                   to="women"
                 >
                   women
                 </Link>
+                       <div className="megamenu-section">
+                          <div className="megamenu-content container p-3">
+                            <div className="mega-content">
+                            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">women</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">westernwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Ethnicwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Sports & Activewear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Sleepwear & Lingerie</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Bags,wallets & Clutches</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Footwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Occasion</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Brand</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">men</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Top Wear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Bottom Wear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Ethnic Wear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Accessories</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Sports And Activewear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Footwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Innerwear And Sleepwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Bags And Backpacks</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Occasion</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Brand</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">kids</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Boys Topwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Baby Bottomwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Girls Bottomwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Girls Topwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Boys Bottomwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Boys Innerwear And Sleepwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Girls Innerwear And Sleepwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Baby Innerwear And Sleepwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Girls Bags And Backpacks</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Baby Footwear</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Boys Bags And Backpacks</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">home</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Bath</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Bed</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Decor</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Kitchenware</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Product</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Brand</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">brand</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">celio</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">louis philippe</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">zink</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">peter england</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">beauty</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Makeup</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Mens Fragrances</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Womens Fragrances</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shop By Brand</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">about</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">About Us</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Greencard</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Store Locator</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Payment Options</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div className="mega-menu">
+                <h4 className="text-uppercase fw-bolder mb-3">customer</h4>
+                <ul>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Track Order</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">FAQs</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Customer Support</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Returns & Exchange Policy</a></li>
+                    <li><a className="text-decoration-none text-dark text-capitalize" href="">Shipping Policy</a></li>
+                </ul>
+            </div>
+                            </div>
+                          </div>
+                       </div>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
                   to="men"
                 >
                   men
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
                   href="#"
                 >
                   kids
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
                   to="/"
                 >
                   home
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
                   to="brand"
                 >
                   brands
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
-                  class="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
                   to="beauty"
                 >
                   beauty
@@ -77,12 +189,12 @@ export const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="account-icon ms-3 me-3">
+        <div className="account-icon ms-4 me-0">
           <Link to="account">
             <FiUser />
           </Link>
         </div>
-        <div className="cart-icon ms-3 me-3">
+        <div className="cart-icon ms-4 me-0">
           <Link to="cart">
             <IoBagHandleOutline />
           </Link>
