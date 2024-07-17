@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { Swipercarousel } from './Swipercarousel'
 import { Cardcollection } from './Cardcollection'
 import Cardcollectionnew from './Cardcollectionnew'
@@ -8,7 +8,6 @@ import Brand from './Brand'
 import Video from './Video'
 import Promobanner from './Promobanner'
 import Support from './Support'
-import Footer from './Footer'
 import Giftcard from './Giftcard'
 import Greencard from './Greencard'
 const Home = () => {
@@ -25,6 +24,7 @@ const Home = () => {
       <Greencard/>
       <Promobanner/>
       <Support/>
+      
     </div>
   )
 }

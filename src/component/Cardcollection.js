@@ -14,14 +14,17 @@ import cardImg6 from "../image/761937-8736099.png";
 import cardImg7 from "../image/772993-8898076.png";
 import cardImg8 from "../image/776888-8972231.png";
 import cardImg9 from "../image/730138-8129261.png";
+import Product from "../collection-products/Product";
 export const Cardcollection = () => {
   return (
     <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
       <div className="CardSwiperCarousel container">
-      <div className="card_heading mb-4 pb-2">
-        <h4 className="mb-0">deal of the day</h4>
-        <a className="text-uppercase fw-bolder text-decoration-none" href="#">view all</a>
-      </div>
+        <div className="card_heading mb-4 pb-2">
+          <h4 className="mb-0">deal of the day</h4>
+          <a className="text-uppercase fw-bolder text-decoration-none" href="#">
+            view all
+          </a>
+        </div>
         <Swiper
           className="mySwiper"
           navigation={true}
@@ -30,18 +33,28 @@ export const Cardcollection = () => {
           spaceBetween={30}
         >
           <SwiperSlide>
-            <div class="card border-0">
+            {/* {Product.map((item) => (
+              <div className="card border-0" key={item.id}>
+                <img src={item.image} class="card-img-top" alt="" />
+              </div>
+            ))} */}
+            {Product.map((item) =>(
+              <div className="card border-0" key={item.id}>
+                <img src={item.image} alt="image"/>
+              </div>
+            ))}
+            {/* <div class="card border-0">
               <img src={cardImg1} class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-title text-uppercase mb-1">indus route</h5>
                 <p class="card-text mb-1">
                   Blue Solid Casual Men Regular Fit Kurtas
-                </p>
+                </p>  
                 <p className="product_price mb-0">₹629<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹670</span></p>
               </div>
-            </div>
+            </div> */}
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div class="card border-0">
               <img src={cardImg2} class="card-img-top" alt="" />
               <div class="card-body">
@@ -144,7 +157,7 @@ export const Cardcollection = () => {
                 <p className="product_price mb-0">₹648<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹750</span></p>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
