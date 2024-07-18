@@ -1,35 +1,35 @@
-import slider1 from "../image/slide-1.png";
-import slider2 from "../image/slide-2.png";
-import slider3 from "../image/slide-3.png";
-import slider4 from "../image/slide-4.png";
-import slider5 from "../image/slide-5.png";
-import slider6 from "../image/slide-6.jpg";
+import w1 from "../image/w1.jpg";
+import w2 from "../image/w2.jpg";
+import w3 from "../image/w3.jpg";
+import w4 from "../image/w4.jpg";
+import w5 from "../image/w5.jpg";
+import w6 from "../image/w6.jpg";
 
-const homeSlider = [
+const womenSlider = [
     {
-        image: slider1,
+        image: w1,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     },
     {
-        image: slider2,
+        image: w2,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     },
     {
-        image: slider3,
+        image: w3,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     },
     {
-        image: slider4,
+        image: w4,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     },
     {
-        image: slider5,
+        image: w5,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     },
     {
-        image: slider6,
+        image: w6,
         description: "Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500."
     }
 ]
 
-export default homeSlider;
+export default womenSlider;

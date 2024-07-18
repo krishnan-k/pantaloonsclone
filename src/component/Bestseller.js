@@ -28,7 +28,7 @@ const Bestseller = () => {
                 <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
                 <p class="card-text mb-1">{item.description}</p>  
                   <p className="product_price mb-0">
-                    ₹829</p>
+                    ₹{item.price}</p>
                 </div>
               </SwiperSlide>
               ))}

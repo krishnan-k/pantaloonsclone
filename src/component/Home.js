@@ -26,7 +26,6 @@ const Home = () => {
       <Greencard/>
       <Promobanner/>
       <Support/>
-      
     </div>
   )
 }

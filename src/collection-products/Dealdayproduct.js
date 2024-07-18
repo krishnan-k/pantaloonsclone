@@ -1,74 +1,85 @@
-import product1 from "../image/1.avif";
-import product2 from "../image/2.avif";
-import product3 from "../image/3.avif";
-import product4 from "../image/4.webp";
-import product5 from "../image/5.avif";
-import product6 from "../image/6.avif";
-import product7 from "../image/7.webp";
-import product8 from "../image/8.avif";
-import product9 from "../image/9.avif";
-import product10 from "../image/10.avif";
+import product27 from "../image/27.avif";
+import product28 from "../image/28.avif";
+import product29 from "../image/29.avif";
+import product30 from "../image/30.avif";
+import product31 from "../image/31.avif";
+import product32 from "../image/32.avif";
+import product33 from "../image/33.avif";
+import product34 from "../image/34.avif";
+import product35 from "../image/35.avif";
 
 const dealDayProduct = [
     {
         id: 1,
-        image: product1,
+        image: product27,
         title: "indus route",
-        description: "Blue Solid Casual Men Regular Fit Kurtas"
+        description: "Blue Solid Casual Men Regular Fit Kurtas",
+        price: "824",
+        comparePrice:"1099"
     },
     {
         id: 2,
-        image: product2,
+        image: product28,
         title: "rangmanch",
-        description: "Peach Printed Athleisure Half Sleeves Round Neck Women Regular"
+        description: "Peach Printed Athleisure Half Sleeves Round Neck Women Regular",
+        price: "719",
+        comparePrice:"899"
     },
     {
         id: 3,
-        image: product3,
+        image: product29,
         title: "people",
-        description: "Medium Blue Textured Casual Half Sleeves Polo Collar Men Slim"
+        description: "Medium Blue Textured Casual Half Sleeves Polo Collar Men Slim",
+        price: "655",
+        comparePrice:"799"
     },
     {
         id: 4,
-        image: product4,
+        image: product30,
         title: "bare denim",
-        description: "White Printed Party Full Sleeves Shirt Collar Men Slim Fit"
+        description: "White Printed Party Full Sleeves Shirt Collar Men Slim Fit",
+        price: "594",
+        comparePrice:"699"
     },
     {
         id: 5,
-        image: product5,
+        image: product31,
         title: "rangmanch",
-        description: "Yellow Print Casual V Neck 3/4th Sleeves Knee Length Women"
+        description: "Yellow Print Casual V Neck 3/4th Sleeves Knee Length Women",
+        price: "629",
+        comparePrice:"899"
     },
     {
         id: 6,
-        image: product6,
+        image: product32,
         title: "Street 808",
-        description: "Medium Grey Solid Full Length Casual Men Regular Fit Joggers"
+        description: "Medium Grey Solid Full Length Casual Men Regular Fit Joggers",
+        price: "749",
+        comparePrice:"999"
     },
     {
         id: 7,
-        image: product7,
+        image: product33,
         title: "Ajile",
-        description: "Pink Printed Full Length Mid Rise Casual Women Jogger Track Pants"
+        description: "Pink Printed Full Length Mid Rise Casual Women Jogger Track Pants",
+        price: "679",
+        comparePrice:"799"
     },
     {
         id: 8,
-        image: product8,
+        image: product34,
         title: "Marigold Lane",
-        description: "Yellow Embroidered Ethnic 3/4th Sleeves Square Neck Women Flared Fit  Kurta Gharara Dupatta Set"
+        description: "Yellow Embroidered Ethnic 3/4th Sleeves Square Neck Women Flared Fit  Kurta Gharara Dupatta Set",
+        price: "629",
+        comparePrice:"699"
     },
     {
         id: 9,
-        image: product9,
+        image: product35,
         title: "SF Jeans",
-        description: "Medium Blue Printed Casual Full Sleeves Shirt Collar Men Slim Fit Casual Shirts"
-    },
-    {
-        id: 10,
-        image: product10,
-        title: "Honey",
-        description: "Navy Printed Casual Puff Sleeves Off-shoulder Women Slim Fit Tops"
+        description: "Medium Blue Printed Casual Full Sleeves Shirt Collar Men Slim Fit Casual Shirts",
+        price: "824",
+        comparePrice:"1099"
     }
 ]
 export default dealDayProduct

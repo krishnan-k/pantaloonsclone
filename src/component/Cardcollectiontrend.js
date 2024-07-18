@@ -29,9 +29,9 @@ const Cardcollectiontrend = () => {
             <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
             <p class="card-text mb-1">{item.description}</p>  
               <p className="product_price mb-0">
-                ₹629
+                ₹{item.price}
                 <span className="product_price text-decoration-line-through text-black-50 fw-bolder">
-                  ₹670
+                  ₹{item.comparePrice}
                 </span>
                 <span className="special_offer text-uppercase ">35%off</span>
               </p>

@@ -32,7 +32,7 @@ export const Cardcollection = () => {
                 <p class="card-text mb-1">
                   {item.description}
                 </p>  
-                <p className="product_price mb-0">₹629<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹670</span></p>
+                <p className="product_price mb-0">₹{item.price}<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹{item.comparePrice}</span></p>
               </div>
               </div>
           </SwiperSlide>

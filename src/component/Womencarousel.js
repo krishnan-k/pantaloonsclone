@@ -6,11 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './swipercarousel.css'
-import homeSlider from "../collection-products/Sliderimage";
+import womenSlider from "../collection-products/Sliderimage";
 // Import Swiper styles
 
 
-export const Swipercarousel = () => {
+export const womenCarousel = () => {
   const imaClassName = 'image_class';
   const pagination = {
     clickable: true,
@@ -18,7 +18,7 @@ export const Swipercarousel = () => {
   return (
     <div className="SwiperCarousel">
       <Swiper pagination={pagination} navigation = {true} modules={[Navigation,Pagination]}  className="mySwiper">
-        {homeSlider.map((item) =>(
+        {womenSlider.map((item) =>(
          <SwiperSlide key={item.id}>
           <img className={imaClassName} src={item.image} alt='slider-image' />
           <a class="text-decoration-none text-dark mt-3 mb-3" href="">{item.description}</a>

@@ -27,7 +27,7 @@ const Cardcollectionnew = () => {
               <div class="card-body">
                 <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
                 <p class="card-text mb-1">{item.description}</p>
-                <p className="product_price mb-0">₹629</p>
+                <p className="product_price mb-0">₹{item.price}</p>
               </div>
             </div>
           </SwiperSlide>

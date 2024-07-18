@@ -1,24 +1,24 @@
-import React from 'react'
+import React from "react";
 import beautyOne from "../image/beauty.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import '../component/beautyslider.css'
+import { Navigation } from "swiper/modules";
+import beautySlider from "../collection-products/Beautyporducts"
+import "swiper/css";
+import "swiper/css/navigation";
+import "../component/beautyslider.css";
 const Beautyslider = () => {
-    const imaClassName = 'image_class';
+  const imaClassName = "image_class";
   return (
     <div className="SwiperCarousel beauty_slider">
-      <Swiper className="mySwiper" navigation = {true} modules={[Navigation]}>
-      <SwiperSlide><img className={imaClassName} src={beautyOne} alt='slider-image' />
-        </SwiperSlide>
-        <SwiperSlide><img className={imaClassName} src={beautyOne} alt='slider-image' />
-        </SwiperSlide>
-        <SwiperSlide><img className={imaClassName} src={beautyOne} alt='slider-image' />
-        </SwiperSlide>
+      <Swiper className="mySwiper" navigation={true} modules={[Navigation]}>
+        {beautySlider.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img className={imaClassName} src={item.image} alt="slider-image" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
-  )
-}
+  );
+};
 
-export default Beautyslider
+export default Beautyslider;
