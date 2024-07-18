@@ -23,7 +23,8 @@ export const Swipercarousel = () => {
   return (
     <div className="SwiperCarousel">
       <Swiper pagination={pagination} navigation = {true}  modules={[Navigation,Pagination]} className="mySwiper">
-      <SwiperSlide><img className={imaClassName} src={slideSix} alt='slider-image' />
+      <SwiperSlide>
+        <img className={imaClassName} src={slideSix} alt='slider-image' />
         <a class="text-decoration-none text-dark mt-3 mb-3" href="">Pantaloons Sale is here! Get Upto 60% Off + Extra Rs.1500/- Off* on order value of Rs.5999/-, Code: SALE1500.</a>
         </SwiperSlide>
         <SwiperSlide><img className={imaClassName} src={slideOne} alt='slider-image' />

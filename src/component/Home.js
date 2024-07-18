@@ -10,6 +10,7 @@ import Promobanner from './Promobanner'
 import Support from './Support'
 import Giftcard from './Giftcard'
 import Greencard from './Greencard'
+import Bestseller from './Bestseller'
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Home = () => {
       <Cardcollection/>
       <Cardcollectionnew/>
       <Cardcollectiontrend/>
+      <Bestseller/>
       <Grid/>
       <Brand/>
       <Video/>

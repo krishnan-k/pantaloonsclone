@@ -73,6 +73,9 @@
     background: #F6C929;
     z-index: -1;
 }
+.Card_Swiper_Carousel_One .card-body{
+    padding: 15px 5px;
+}
 .card_collection_one .swiper .swiper-button-next:before{
     border-radius: 50px 0 0 50px; right: -30px;
 }
