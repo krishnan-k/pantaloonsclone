@@ -1,6 +1,6 @@
 import product27 from "../image/27.avif";
 import product28 from "../image/28.avif";
-import product29 from "../image/29.avif";
+import product29 from "../image/29.jpg";
 import product30 from "../image/30.avif";
 import product31 from "../image/31.avif";
 import product32 from "../image/32.avif";

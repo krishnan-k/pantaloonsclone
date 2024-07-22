@@ -6,6 +6,7 @@ import "../component-css/cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import dealDayProduct from "../collection-products/Dealdayproduct";
+import flashImage from "../image/flash.svg"
 export const Cardcollection = () => {
   return (
     <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
@@ -23,19 +24,31 @@ export const Cardcollection = () => {
           slidesPerView={5}
           spaceBetween={30}
         >
-          {dealDayProduct.map((item) =>(
-          <SwiperSlide>
+          {dealDayProduct.map((item) => (
+            <SwiperSlide>
               <div className="card border-0" key={item.id}>
-                <img src={item.image} alt="image"/>
+                <img src={item.image} alt="image" />
                 <div class="card-body">
-                <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
-                <p class="card-text mb-1">
-                  {item.description}
-                </p>  
-                <p className="product_price mb-0">₹{item.price}<span className="product_price text-decoration-line-through text-black-50 fw-bolder">₹{item.comparePrice}</span></p>
+                  <div className="offer-tag">
+                    <div className="offer-percentage ">
+                    <span className="offer-text text-uppercase">30% off</span>
+                    </div>
+                    <div className="flash">
+                      <img src={flashImage} alt="flash-image" />
+                      <span className="flash-text text-capitalize ms-1 me-1">flash deal</span>
+                    </div>
+                  </div>
+                  <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
+                  <p class="card-text mb-1">{item.description}</p>
+                  <p className="product_price mb-0">
+                    ₹{item.price}
+                    <span className="product_price text-decoration-line-through text-black-50 fw-bolder">
+                      ₹{item.comparePrice}
+                    </span>
+                  </p>
+                </div>
               </div>
-              </div>
-          </SwiperSlide>
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>

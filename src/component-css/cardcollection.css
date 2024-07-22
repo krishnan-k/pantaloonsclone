@@ -101,4 +101,25 @@
 span.product_price {
     margin-left: 5px;
 }
-
+.offer-tag{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.offer-percentage {
+    font-size: 12px;
+    background: #db1f5b;
+    line-height: normal;
+    padding: 4px 7px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+}
+.flash-text {
+    font-family: Trirong, serif;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: .5px .5px 0 #db1f5b;
+}
