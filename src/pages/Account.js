@@ -1,5 +1,5 @@
 import React from "react";
-import "../component/account.css";
+import "../component-css/account.css";
 export const Account = () => {
   return (
     <div className="container-fluid account">

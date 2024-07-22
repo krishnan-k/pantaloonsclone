@@ -1,5 +1,5 @@
 import React from "react";
-import "./video.css"
+import "../component-css/video.css";
 import promovideo from "../image/Pantaloonsvideo.mp4";
 const Video = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import './cart.css';
+import "../component-css/cart.css";
 import emptyCartIcon from "../image/empty-cart.jpg";
 import Cardcollectiontrend from "../component/Cardcollectiontrend";
 export const Cart = () => {

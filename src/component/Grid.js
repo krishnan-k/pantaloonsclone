@@ -3,9 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./grid.css";
-import gridimg1 from "../image/grid-1.jpeg";
-import gridimg2 from "../image/grid-2.jpeg";
+import "../component-css/grid.css";
 import gridProducts from "../collection-products/Gridproducts";
 
 const Grid = () => {

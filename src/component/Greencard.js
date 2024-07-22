@@ -1,5 +1,5 @@
 import React from "react";
-import './greencard.css'
+import "../component-css/greencard.css";
 import greencard from '../image/greencard.png'
 const Greencard = () => {
   return (

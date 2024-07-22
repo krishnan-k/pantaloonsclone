@@ -1,12 +1,11 @@
 import React from "react";
-
 import support1 from "../image/s1.png";
 import support2 from "../image/s2.png";
 import support3 from "../image/s3.png";
 import support4 from "../image/s4.png";
 import support5 from "../image/s5.png";
 import support6 from "../image/s6.png";
-import "./support.css";
+import "../component-css/support.css";
 const Support = () => {
   return (
     <div className="support pt-5 pb-5">

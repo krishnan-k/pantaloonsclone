@@ -1,5 +1,5 @@
 import React from "react";
-import "./giftcard.css";
+import "../component-css/giftcard.css";
 import giftcard from "../image/giftcard.png";
 const Giftcard = () => {
   const giftCardImage = "gift-card-image";

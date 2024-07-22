@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./cardcollectionnew.css"
+import "../component-css/cardcollectionnew.css";
 import Newarrival from "../collection-products/Newarrival"
 const Cardcollectionnew = () => {
   return (

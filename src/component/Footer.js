@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "../component-css/footer.css";
 import paymentimage from "../image/payment.png";
 import playstore from "../image/google-play.svg"
 import applestore from "../image/apple.svg";

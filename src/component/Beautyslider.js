@@ -1,11 +1,10 @@
 import React from "react";
-import beautyOne from "../image/beauty.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import beautySlider from "../collection-products/Beautyporducts"
 import "swiper/css";
 import "swiper/css/navigation";
-import "../component/beautyslider.css";
+import "../component-css/beautyslider.css";
 const Beautyslider = () => {
   const imaClassName = "image_class";
   return (

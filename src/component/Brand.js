@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./brand.css";
+import "../component-css/brand.css";
 import brandProducts from "../collection-products/Brandproducts"
 const Brand = () => {
   return (

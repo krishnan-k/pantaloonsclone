@@ -2,7 +2,7 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import "./cardcollection.css";
+import "../component-css/cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import dealDayProduct from "../collection-products/Dealdayproduct";

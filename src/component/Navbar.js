@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.css";
+import "../component-css/navbar.css";
 import logo from "../image/logo_pantaloons.svg";
 import { Link } from "react-router-dom";
 import { IoBagHandleOutline } from "react-icons/io5";
@@ -155,12 +155,12 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
-                  href="#"
+                  to="kids"
                 >
                   kids
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link
