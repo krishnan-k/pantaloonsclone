@@ -1,13 +1,18 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "../component-css/cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import menDealDayProduct from "../collection-products/Mendealdayproducts";
-
+import { IoBagHandleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Mendeal = () => {
+  const autoplay = {
+    delay: 2500,
+    disableOnInteraction: false,
+  };
   return (
     <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
       <div className="CardSwiperCarousel container">
@@ -20,14 +25,23 @@ const Mendeal = () => {
         <Swiper
           className="mySwiper"
           navigation={true}
-          modules={[Navigation]}
-          slidesPerView={5}
+          modules={[Navigation, Autoplay]}
+          slidesPerView={4.5}
           spaceBetween={30}
+          loop={true}
+          autoplay={autoplay}
         >
           {menDealDayProduct.map((item) => (
             <SwiperSlide>
               <div className="card border-0" key={item.id}>
-                <img src={item.image} alt="image" />
+                <div className="product-image">
+                  <img src={item.image} alt="image" />
+                  <div className="add-to-cart-button">
+                    <Link to="cart">
+                      <IoBagHandleOutline />
+                    </Link>
+                  </div>
+                </div>
                 <div class="card-body">
                   <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
                   <p class="card-text mb-1">{item.description}</p>

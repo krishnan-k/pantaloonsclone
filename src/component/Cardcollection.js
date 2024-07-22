@@ -1,13 +1,19 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "../component-css/cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import dealDayProduct from "../collection-products/Dealdayproduct";
-import flashImage from "../image/flash.svg"
+import flashImage from "../image/flash.svg";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 export const Cardcollection = () => {
+  const autoplay = {
+    delay: 2500,
+    disableOnInteraction: false,
+  }
   return (
     <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
       <div className="CardSwiperCarousel container">
@@ -20,22 +26,33 @@ export const Cardcollection = () => {
         <Swiper
           className="mySwiper"
           navigation={true}
-          modules={[Navigation]}
-          slidesPerView={5}
+          modules={[Navigation,Autoplay]}
+          slidesPerView={4.5}
           spaceBetween={30}
+          loop={true}
+          autoplay={autoplay}
         >
           {dealDayProduct.map((item) => (
             <SwiperSlide>
               <div className="card border-0" key={item.id}>
-                <img src={item.image} alt="image" />
+                <div className="product-image">
+                  <img src={item.image} alt="image" />
+                  <div className="add-to-cart-button">
+                    <Link to="cart">
+                      <IoBagHandleOutline />
+                    </Link>
+                  </div>
+                </div>
                 <div class="card-body">
                   <div className="offer-tag">
                     <div className="offer-percentage ">
-                    <span className="offer-text text-uppercase">30% off</span>
+                      <span className="offer-text text-uppercase">30% off</span>
                     </div>
                     <div className="flash">
                       <img src={flashImage} alt="flash-image" />
-                      <span className="flash-text text-capitalize ms-1 me-1">flash deal</span>
+                      <span className="flash-text text-capitalize ms-1 me-1">
+                        flash deal
+                      </span>
                     </div>
                   </div>
                   <h5 class="card-title text-uppercase mb-1">{item.title}</h5>

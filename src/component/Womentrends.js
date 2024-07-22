@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../component-css/cardcollectionnew.css";
 import womenTrendsProducts from "../collection-products/Womentrendsproducts";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Womentrends = () => {
   return (
@@ -24,7 +26,14 @@ const Womentrends = () => {
           {womenTrendsProducts.map((item) => (
             <SwiperSlide>
               <div class="card border-0 p-0" key={item.id}>
-                <img src={item.image} alt="image" />
+                <div className="product-image">
+                  <img src={item.image} alt="image" />
+                  <div className="add-to-cart-button">
+                    <Link to="cart">
+                      <IoBagHandleOutline />
+                    </Link>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title text-uppercase mb-1">{item.title}</h5>

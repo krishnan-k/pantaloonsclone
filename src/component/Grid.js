@@ -9,7 +9,7 @@ import gridProducts from "../collection-products/Gridproducts";
 const Grid = () => {
   return (
     <div className="container grid_section">
-      <Swiper slidesPerView={2} spaceBetween={30}>
+      <Swiper slidesPerView={2.5} spaceBetween={30}>
         {gridProducts.map((item) => (
           <SwiperSlide key={item.image}>
             <img src={item.image} alt="gridiamge" />

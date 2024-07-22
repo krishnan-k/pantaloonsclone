@@ -5,7 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../component-css/cardcollectionnew.css";
 import kidsStylesdProducts from "../collection-products/Kidsstyleproducts";
-
+import { IoBagHandleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Kidsstyle = () => {
   return (
     <div className="card_collection_one mt-4 mb-3 pt-4 pb-2">
@@ -23,7 +24,14 @@ const Kidsstyle = () => {
           {kidsStylesdProducts.map((item) => (
             <SwiperSlide>
               <div class="card border-0" key={item.id}>
-                <img src={item.image} alt="image" />
+                <div className="product-image">
+                  <img src={item.image} alt="image" />
+                  <div className="add-to-cart-button">
+                    <Link to="cart">
+                      <IoBagHandleOutline />
+                    </Link>
+                  </div>
+                </div>
                 <div class="card-body">
                   <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
                   <p class="card-text mb-1">{item.description}</p>

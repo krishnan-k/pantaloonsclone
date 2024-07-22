@@ -1,12 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../component-css/cardcollectionnew.css";
 import kidsRecommendedProducts from "../collection-products/Kidsrecommendedproducts";
-
+import { IoBagHandleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Kidsrecommended = () => {
+  const autoplay = {
+    delay: 2500,
+    disableOnInteraction: false,
+  };
   return (
     <div className="card_collection_one mt-4 mb-3 pt-5 pb-2">
       <div className="Card_Swiper_Carousel_One container">
@@ -16,14 +21,23 @@ const Kidsrecommended = () => {
         <Swiper
           className="mySwiper"
           navigation={true}
-          modules={[Navigation]}
-          slidesPerView={4}
-          spaceBetween={30}
+          modules={[Navigation, Autoplay]}
+          slidesPerView={4.5}
+          spaceBetween={15}
+          loop={true}
+          autoplay={autoplay}
         >
           {kidsRecommendedProducts.map((item) => (
             <SwiperSlide>
               <div class="card border-0" key={item.id}>
-                <img src={item.image} alt="image" />
+                <div className="product-image">
+                  <img src={item.image} alt="image" />
+                  <div className="add-to-cart-button">
+                    <Link to="cart">
+                      <IoBagHandleOutline />
+                    </Link>
+                  </div>
+                </div>
                 <div class="card-body">
                   <h5 class="card-title text-uppercase mb-1">{item.title}</h5>
                   <p class="card-text mb-1">{item.description}</p>
