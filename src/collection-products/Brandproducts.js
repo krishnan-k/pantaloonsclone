@@ -10,15 +10,15 @@ const brandProducts = [
         image: brand1
     },
     {
-        id: 38,
+        id: 201,
         image: brand2
     },
     {
-        id: 39,
+        id: 200,
         image: brand3
     },
     {
-        id: 40,
+        id: 202,
         image: brand4
     },
     {

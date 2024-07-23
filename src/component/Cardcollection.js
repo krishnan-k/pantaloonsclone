@@ -1,18 +1,30 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "../component-css/cardcollection.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import dealDayProduct from "../collection-products/Dealdayproduct";
 import flashImage from "../image/flash.svg";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { MdDeleteForever } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, deleteCart } from "../store/Cartslice";
 export const Cardcollection = () => {
-  const autoplay = {
-    delay: 2500,
-    disableOnInteraction: false,
+  // const autoplay = {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // }
+  const product = useSelector(state =>
+    state.cart.cartItems
+  )
+  const dispatch = useDispatch();
+  const addCart = (item) =>{
+    dispatch(addToCart(item))
+  }
+  const deleteFromCart = (item) =>{
+    dispatch(deleteCart(item))
   }
   return (
     <div className="card_collection_section mt-5 mb-0 pt-5 pb-5">
@@ -26,21 +38,24 @@ export const Cardcollection = () => {
         <Swiper
           className="mySwiper"
           navigation={true}
-          modules={[Navigation,Autoplay]}
+          modules={[Navigation]}
           slidesPerView={4.5}
           spaceBetween={30}
-          loop={true}
-          autoplay={autoplay}
+          loop={false}
+          
         >
           {dealDayProduct.map((item) => (
             <SwiperSlide>
               <div className="card border-0" key={item.id}>
                 <div className="product-image">
                   <img src={item.image} alt="image" />
-                  <div className="add-to-cart-button">
-                    <Link to="cart">
-                      <IoBagHandleOutline />
-                    </Link>
+                  <div className="add-to-cart-button">  
+                    {product.find(items => items.id === item.id)
+                    ? <MdDeleteForever onClick={() => deleteFromCart(item)}/> :
+                     <IoBagHandleOutline onClick={() => addCart(item)}/>
+                    }
+                      
+                      
                   </div>
                 </div>
                 <div class="card-body">

@@ -7,8 +7,20 @@ import "swiper/css/navigation";
 import "../component-css/cardcollectionnew.css";
 import Newarrival from "../collection-products/Newarrival";
 import { IoBagHandleOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { MdDeleteForever } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, deleteCart } from "../store/Cartslice";
 const Cardcollectionnew = () => {
+  const product = useSelector(state =>
+    state.cart.cartItems
+  )
+  const dispatch = useDispatch();
+  const addCart = (item) =>{
+    dispatch(addToCart(item))
+  }
+  const deleteFromCart = (item) =>{
+    dispatch(deleteCart(item))
+  }
   return (
     <div className="card_collection_one mt-4 mb-3 pt-5 pb-2">
       <div className="Card_Swiper_Carousel_One container">
@@ -28,9 +40,10 @@ const Cardcollectionnew = () => {
                 <div className="product-image">
                   <img src={item.image} alt="image" />
                   <div className="add-to-cart-button">
-                    <Link to="cart">
-                      <IoBagHandleOutline />
-                    </Link>
+                      {product.find(items => items.id === item.id) ?
+                     <MdDeleteForever onClick={()=>deleteFromCart(item)}/>
+                     : <IoBagHandleOutline onClick={()=>addCart(item)}/>
+                     }
                   </div>
                 </div>
                 <div class="card-body">
