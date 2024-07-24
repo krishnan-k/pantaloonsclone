@@ -142,6 +142,7 @@ span.product_price {
     background: white;
     border-radius: 50%;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 .add-to-cart-button a{
     display: flex;
