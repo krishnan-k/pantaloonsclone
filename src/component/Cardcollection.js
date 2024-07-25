@@ -53,9 +53,7 @@ export const Cardcollection = () => {
                     {product.find(items => items.id === item.id)
                     ? <MdDeleteForever onClick={() => deleteFromCart(item)}/> :
                      <IoBagHandleOutline onClick={() => addCart(item)}/>
-                    }
-                      
-                      
+                    } 
                   </div>
                 </div>
                 <div class="card-body">
