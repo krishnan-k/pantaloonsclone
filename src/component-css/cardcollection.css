@@ -227,7 +227,11 @@ span.product_price {
     width: 50%;
     z-index: 2;
 }
-
+.delete-cart {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 .delete-cart {
     padding: 10px;
     background: #db1f5b;

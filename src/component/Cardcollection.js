@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import dealDayProduct from "../collection-products/Dealdayproduct";
 import flashImage from "../image/flash.svg";
-import { IoBagHandleOutline } from "react-icons/io5";
 import { MdDeleteForever } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteCart } from "../store/Cartslice";
@@ -40,7 +39,7 @@ export const Cardcollection = () => {
           className="mySwiper"
           navigation={true}
           modules={[Navigation]}
-          slidesPerView={4.5}
+          slidesPerView={4}
           spaceBetween={30}
           loop={false}
           

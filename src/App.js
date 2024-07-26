@@ -11,7 +11,10 @@ import { Cart } from "./pages/Cart";
 import Beauty from "./pages/Beauty";
 import Support from "./component/Support";
 import Kids from "./pages/Kids";
-
+import Admin from "./Admin/Admin";
+import Womendashboard from "./Admin/Womendashboard";
+import Mendashboard from "./Admin/Mendashboard";
+import Kidsdashboard from "./Admin/Kidsdashboard";
 function App() {
   return (
     <div> 
@@ -23,6 +26,10 @@ function App() {
           <Route path="men" element={<Menpage />} />
           <Route path="kids" element={<Kids/>}/>
           <Route path="beauty" element={<Beauty />} />
+          <Route path="/admin" element={<Admin/>}/>
+          <Route path="/admin/womendashboard" element={<Womendashboard/>}/>
+          <Route path="/admin/mendashboard" element={<Mendashboard/>}/>
+          <Route path="/admin/kidsdashboard" element={<Kidsdashboard />}/>
           <Route path="brand" element={<Brandpage />} />
           <Route path="account" element={<Account />} />
           <Route path="cart" element={<Cart />} />

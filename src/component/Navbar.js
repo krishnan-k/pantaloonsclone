@@ -44,7 +44,7 @@ export const Navbar = () => {
             <ul className="navigation navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link active text-uppercase ms-3 me-3 fw-normal text-white"
                   aria-current="page"
                   to="women"
                 >
@@ -527,7 +527,7 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
                   to="men"
                 >
                   men
@@ -535,7 +535,7 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
                   to="kids"
                 >
                   kids
@@ -543,7 +543,7 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
                   to="/"
                 >
                   home
@@ -551,7 +551,7 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
                   to="brand"
                 >
                   brands
@@ -559,10 +559,18 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-light"
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
                   to="beauty"
                 >
                   beauty
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link text-uppercase ms-3 me-3 fw-normal text-white"
+                  to="admin"
+                >
+                  admin
                 </Link>
               </li>
             </ul>

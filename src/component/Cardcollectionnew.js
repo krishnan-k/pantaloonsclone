@@ -9,6 +9,7 @@ import Newarrival from "../collection-products/Newarrival";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteCart } from "../store/Cartslice";
+import { MdDeleteForever } from "react-icons/md";
 const Cardcollectionnew = () => {
   const product = useSelector(state =>
     state.cart.cartItems
@@ -40,7 +41,9 @@ const Cardcollectionnew = () => {
                   <img src={item.image} alt="image" />
                   <div className="add-to-cart-button">  
                     {product.find(items => items.id === item.id)
-                    ? <Link to="cart" className="text-center text-decoration-none text-white text-capitalize">view cart</Link> :
+                    ? <div className="add">
+                      <Link to="cart" className="view-cart text-center text-decoration-none text-white text-capitalize">view cart</Link>
+                     <div className="delete-cart text-center text-white text-capitalize" onClick={()=> deleteFromCart(item) }>delete cart <MdDeleteForever/></div> </div>   :
                     <div className="add-to-cart text-center text-decoration-none text-white text-capitalize" onClick={() => addCart(item)}>add to cart</div>
                     } 
                   </div>

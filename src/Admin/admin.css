@@ -1,0 +1,52 @@
+.admin_pannel_menu ul li {
+  list-style: none;
+  padding: 15px 40px;
+}
+.admin_pannel_dashboard,
+.pannel {
+  display: flex;
+  width: 100%;
+}
+.admin_pannel_dashboard {
+  max-width: 400px;
+  background: #263544;
+  height: 100vh;
+}
+.pannel .table {
+  height: 100%;
+}
+.table_section {
+  width: 100%;
+  margin: 30px;
+  height: 100%;
+}
+.pannel table.table th {
+    border: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 1px;
+    vertical-align: middle;
+    width: 20%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pannel .table :where(tr, td) {
+  text-transform: capitalize;
+}
+.pannel button.button {
+    border: none;
+    color: white;
+    padding: 8px 20px 8px 15px;
+    border-radius: 5px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.pannel .table button.button.edit-button {
+  background: #18c985;
+}
+.pannel .table button.button.delete-button {
+  background: #d94e3d;
+}
+.pannel button.button.add-item-button {
+  background: #18c985;
+}
