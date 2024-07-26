@@ -19,9 +19,10 @@ const cartSlice = createSlice({
                 state.cartItems.push({
                     id: newItem.id,
                     image: newItem.image,
+                    title: newItem.title,
+                    description:newItem.description,
                     quantity: newItem.quantity,
-                    price: newItem.price,
-                    comparePrice: newItem.comparePrice
+                    price: newItem.price
                 });
             }
             localStorage.setItem('cartItems', JSON.stringify(state.cartItems));

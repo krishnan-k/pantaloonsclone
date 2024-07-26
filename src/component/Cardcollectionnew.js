@@ -6,8 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../component-css/cardcollectionnew.css";
 import Newarrival from "../collection-products/Newarrival";
-import { IoBagHandleOutline } from "react-icons/io5";
-import { MdDeleteForever } from "react-icons/md";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteCart } from "../store/Cartslice";
 const Cardcollectionnew = () => {
@@ -36,14 +35,14 @@ const Cardcollectionnew = () => {
         >
           {Newarrival.map((item) => (
             <SwiperSlide>
-              <div class="card border-0" key={item.id}>
-                <div className="product-image">
+              <div class="card border-0 card-product" key={item.id}>
+              <div className="product-image">
                   <img src={item.image} alt="image" />
-                  <div className="add-to-cart-button">
-                      {product.find(items => items.id === item.id) ?
-                     <MdDeleteForever onClick={()=>deleteFromCart(item)}/>
-                     : <IoBagHandleOutline onClick={()=>addCart(item)}/>
-                     }
+                  <div className="add-to-cart-button">  
+                    {product.find(items => items.id === item.id)
+                    ? <Link to="cart" className="text-center text-decoration-none text-white text-capitalize">view cart</Link> :
+                    <div className="add-to-cart text-center text-decoration-none text-white text-capitalize" onClick={() => addCart(item)}>add to cart</div>
+                    } 
                   </div>
                 </div>
                 <div class="card-body">
