@@ -16,9 +16,9 @@ const Kidsdashboard = () => {
           >
             <Link
               className="text-decoration-none text-white"
-              to="/admin/editdashboard"
+              to="/admin/kidsadd"
             >
-              <MdAddBox /> add item{" "}
+              <MdAddBox /> add item
             </Link>
           </button>
         </div>
@@ -38,17 +38,22 @@ const Kidsdashboard = () => {
               <th>Pink Full Sleeves </th>
               <th>350</th>
               <th>
-                <button
-                  type="button"
-                  className="button text-capitalize edit-button"
+                <Link
+                  to="/admin/kidsedit"
+                  className="text-decoration-none"
                 >
-                  <MdEdit /> edit
-                </button>
+                  <button
+                    type="button"
+                    className="button text-capitalize edit-button shine-effect"
+                  >
+                    <MdEdit /> edit
+                  </button>
+                </Link>
               </th>
               <th>
                 <button
                   type="button"
-                  className="button text-capitalize delete-button"
+                  className="button text-capitalize delete-button shine-effect"
                 >
                   <MdDeleteForever /> delete
                 </button>

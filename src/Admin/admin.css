@@ -106,7 +106,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  height: 45px;
+  height: 36px;
   border-radius: 5px;
   /* width: 40%; */
 }
@@ -118,8 +118,8 @@
 }
 .pannel form.editdashboard .upload-button svg,
 .pannel form.editdashboard .back-button svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .add-to-cart-button:hover .shine-effect::after {
   -webkit-animation: shine 0.85s;
@@ -129,4 +129,16 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.pannel .editdashboard input[type="text"]::placeholder,
+textarea::placeholder {
+  color: rgba(0,0,0,0.5);
+  font-size: 13px;
+}
+.pannel .editdashboard .form_price {
+  display: flex;
+  gap: 15px;
+}
+.pannel .editdashboard label {
+  font-size: 14px;
 }

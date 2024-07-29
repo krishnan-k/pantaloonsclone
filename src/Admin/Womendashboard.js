@@ -13,7 +13,7 @@ const Womendashboard = () => {
           type="button"
           className="button text-capitalize add-item-button mb-3 shine-effect"
         >
-          <Link className="text-decoration-none text-white" to="/admin/editdashboard"><MdAddBox /> add item </Link>
+          <Link className="text-decoration-none text-white" to="/admin/womenadd"><MdAddBox /> add item </Link>
          
         </button></div>
         <table className="table">
@@ -32,12 +32,12 @@ const Womendashboard = () => {
               <th>Pink Full Sleeves </th>
               <th>150</th>
               <th>
-                <button
+              <Link to="/admin/womenedit" className="text-decoration-none"><button
                   type="button"
                   className="button text-capitalize edit-button shine-effect"
                 >
                   <MdEdit/> edit 
-                </button>
+                </button></Link>
               </th>
               <th>
                 <button

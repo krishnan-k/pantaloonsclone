@@ -2,7 +2,8 @@ import React from "react";
 import Admin from "./Admin";
 import { IoMdCloudUpload } from "react-icons/io";
 import { FaBackspace } from "react-icons/fa";
-const Editdashboard = () => {
+import { Link } from "react-router-dom";
+const Menedit = () => {
   return (
     <div className="pannel">
       <Admin />
@@ -17,6 +18,32 @@ const Editdashboard = () => {
               name="title"
               placeholder="add your title here"
             />
+          </div>
+          <div className="form_price mb-3">
+            <div className="original_price">
+              <label className="text-capitalize" for="price">
+                price
+              </label>
+              <input
+                className="text-capitalize"
+                type="text"
+                id="price"
+                name="price"
+                placeholder="price"
+              />
+            </div>
+            <div className="compare_price">
+              <label className="text-capitalize" for="price">
+                compare price
+              </label>
+              <input
+                className="text-capitalize"
+                type="text"
+                id="price"
+                name="price"
+                placeholder="compare price"
+              />
+            </div>
           </div>
           <div className="form_image mb-3">
           <label className="text-capitalize" for="image">Image url</label>
@@ -37,7 +64,7 @@ const Editdashboard = () => {
             ></textarea>
           </div>
           <div className="editable-buttons">
-            <button id="back-button" className="text-capitalize back-button shine-effect" type="button"> <FaBackspace />back</button>
+            <Link to="/admin/mendashboard" className="text-decoration-none"><button id="back-button" className="text-capitalize back-button shine-effect" type="button"> <FaBackspace />back</button></Link>            
             <button id="upload" className="text-capitalize upload-button shine-effect" type="button"> <IoMdCloudUpload /> upload</button>
           </div>
         </form>
@@ -46,4 +73,4 @@ const Editdashboard = () => {
   );
 };
 
-export default Editdashboard;
+export default Menedit;

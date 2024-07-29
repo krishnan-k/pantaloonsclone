@@ -16,9 +16,9 @@ const Mendashboard = () => {
           >
             <Link
               className="text-decoration-none text-white"
-              to="/admin/editdashboard"
+              to="/admin/menadd"
             >
-              <MdAddBox /> add item{" "}
+              <MdAddBox /> add item
             </Link>
           </button>
         </div>
@@ -38,17 +38,17 @@ const Mendashboard = () => {
               <th>Pink Full Sleeves </th>
               <th>250</th>
               <th>
-                <button
+              <Link to="/admin/menedit" className="text-decoration-none"><button
                   type="button"
-                  className="button text-capitalize edit-button"
+                  className="button text-capitalize edit-button shine-effect"
                 >
-                  <MdEdit /> edit
-                </button>
+                  <MdEdit/> edit 
+                </button></Link>
               </th>
               <th>
                 <button
                   type="button"
-                  className="button text-capitalize delete-button"
+                  className="button text-capitalize delete-button shine-effect"
                 >
                   <MdDeleteForever /> delete
                 </button>

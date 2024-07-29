@@ -225,7 +225,7 @@ span.product_price {
     content: "";
     display: block;
     height: 100%;
-    left: -55%;
+    left: -60%;
     position: absolute;
     top: 0;
     transform: skewX(-25deg);

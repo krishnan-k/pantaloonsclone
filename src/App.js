@@ -15,7 +15,13 @@ import Admin from "./Admin/Admin";
 import Womendashboard from "./Admin/Womendashboard";
 import Mendashboard from "./Admin/Mendashboard";
 import Kidsdashboard from "./Admin/Kidsdashboard";
-import Editdashboard from "./Admin/Editdashboard";
+import Menedit from "./Admin/Menedit";
+import Menadd from "./Admin/Menedit";
+import Womenadd from "./Admin/Womenadd";
+import Womenedit from "./Admin/Womenedit";
+import Kidsedit from "./Admin/Kidsedit";
+import Kidsadd from "./Admin/Kidsadd";
+
 function App() {
   return (
     <div> 
@@ -31,7 +37,12 @@ function App() {
           <Route path="/admin/womendashboard" element={<Womendashboard/>}/>
           <Route path="/admin/mendashboard" element={<Mendashboard/>}/>
           <Route path="/admin/kidsdashboard" element={<Kidsdashboard />}/>
-          <Route path="/admin/editdashboard" element={<Editdashboard/>}/>
+          <Route path="/admin/womenedit" element={<Womenedit/>}/>
+          <Route path="/admin/womenadd" element={<Womenadd/>}/>
+          <Route path="/admin/menedit" element={<Menedit/>}/>
+          <Route path="/admin/menadd" element={<Menadd/>}/>
+          <Route path="/admin/kidsedit" element={<Kidsedit/>}/>
+          <Route path="/admin/kidsadd" element={<Kidsadd/>}/>
           <Route path="brand" element={<Brandpage />} />
           <Route path="account" element={<Account />} />
           <Route path="cart" element={<Cart />} />
