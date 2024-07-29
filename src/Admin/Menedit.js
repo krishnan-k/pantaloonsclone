@@ -7,7 +7,7 @@ const Menedit = () => {
   return (
     <div className="pannel">
       <Admin />
-      <div className="form-control-section">
+      <div className="form-control-section men">
         <form className="editdashboard">
           <div className="form_title mb-3">
             <label className="text-capitalize" for="title">Title</label>
