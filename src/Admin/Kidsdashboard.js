@@ -3,17 +3,25 @@ import Admin from "./Admin";
 import { MdAddBox } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Kidsdashboard = () => {
   return (
     <div className="pannel">
       <Admin />
       <div className="table_section">
-        <button
-          type="button"
-          className="button text-capitalize add-item-button mb-3  "
-        >
-         <MdAddBox /> add item 
-        </button>
+        <div className="add-more-item">
+          <button
+            type="button"
+            className="button text-capitalize add-item-button mb-3 shine-effect"
+          >
+            <Link
+              className="text-decoration-none text-white"
+              to="/admin/editdashboard"
+            >
+              <MdAddBox /> add item{" "}
+            </Link>
+          </button>
+        </div>
         <table className="table">
           <thead>
             <tr>
@@ -34,7 +42,7 @@ const Kidsdashboard = () => {
                   type="button"
                   className="button text-capitalize edit-button"
                 >
-                  <MdEdit/> edit 
+                  <MdEdit /> edit
                 </button>
               </th>
               <th>
@@ -42,7 +50,7 @@ const Kidsdashboard = () => {
                   type="button"
                   className="button text-capitalize delete-button"
                 >
-                 <MdDeleteForever/> delete
+                  <MdDeleteForever /> delete
                 </button>
               </th>
             </tr>
