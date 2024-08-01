@@ -21,12 +21,13 @@ import Womenadd from "./Admin/Womenadd";
 import Womenedit from "./Admin/Womenedit";
 import Kidsedit from "./Admin/Kidsedit";
 import Kidsadd from "./Admin/Kidsadd";
-
+import Cartdrawer from "./pages/Cartdrawer";
 function App() {
   return (
     <div> 
       <BrowserRouter>
         <Navbar />
+        {/* <Cartdrawer/> */}
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="women" element={<Womenpage />} />

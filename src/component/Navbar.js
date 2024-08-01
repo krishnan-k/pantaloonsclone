@@ -9,17 +9,11 @@ export const Navbar = () => {
   const product = useSelector(state =>
     state.cart.cartItems
   )
-  const headerNavigation = document.getElementById("navbarsection");
+  const headerNavigation = document.querySelector(".navbar_section");
   if (headerNavigation) {
-    const navigationContent = headerNavigation.querySelector(".navbar-nav");
-    const navigationItems = navigationContent.querySelectorAll(".nav-item");
-    navigationItems.forEach((navbarItem) => {
-      navbarItem.addEventListener("mouseover", () => {
-        navbarItem.classList.add("active");
-      });
-      navbarItem.addEventListener("mouseout", () => {
-        navbarItem.classList.remove("active");
-      });
+    const navigationContent = headerNavigation.querySelector(".cart-icon .cart");
+    navigationContent.addEventListener("click", () =>{
+      navigationContent.classList.add("active");
     });
   }
   return (
@@ -582,7 +576,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="cart-icon ms-4 me-0">
-          <Link to="cart">
+          <Link to="" className="cart">
             <IoBagHandleOutline />
             <div className="product-count">{product.length}</div>
           </Link>
